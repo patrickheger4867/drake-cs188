@@ -1,3 +1,21 @@
+// the real index.js file
+
+import Link from "next/link";
+
+
+export default function Index() {
+    return (
+        <div>
+        <p>Drake University Clothes and items</p>
+    <Link href={"/items"}>
+    <p> This is where we sell Drake University Stuff</p>
+    </Link>
+    </div>
+);
+}
+
+// items/index.js
+
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 
